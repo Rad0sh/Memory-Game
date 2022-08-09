@@ -1,0 +1,106 @@
+body {
+    font-family:sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9027b9;
+    background-image: linear-gradient(225deg, #9027b9 0%, #784BA0 50%, #2B86C5 100%);    
+    min-height: 100vh;
+    margin: 0;
+}
+
+.game-board {
+    margin:30px auto;
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: 5px;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.game-tile {
+    cursor: pointer;
+    background-color: #6e94aa;
+    background-image: linear-gradient(135deg, #6e94aa 0%, #101026 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    transition: 0.4s background-color, 0.4s box-shadow;
+}
+
+.game-tile:hover {
+    opacity: 0.8;
+    background-color:#252524;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.game-score {
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background: rgb(58, 4, 94);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+
+
+.game-start {
+    display: block;
+    max-width: 20em;
+    text-align: center;
+    padding: 1.3em 3em;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #FFF;
+    text-decoration: none;
+    margin: 2em auto;
+    background: rgb(58, 4, 94);
+    border-radius: 3em;
+    line-height: 1.1em;
+    text-shadow: none;
+    transition: 0.5s background-color, 0.5s box-shadow;
+    box-shadow: 0 2px 5px rgba(255, 99, 71, 0.4);
+    border:0;
+    cursor: pointer;
+}
+
+.game-start:hover {
+    opacity: 0.9
+}
+
+.game-timer {
+    display: block;
+    max-width: 20em;
+    text-align: center;
+    padding: 1.3em 3em;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #FFF;
+    text-decoration: none;
+    margin: 2em auto;
+    background: rgb(58, 4, 94);
+    border-radius: 3em;
+    line-height: 1.1em;
+    text-shadow: none;
+    transition: 0.5s background-color, 0.5s box-shadow;
+    box-shadow: 0 2px 5px rgba(255, 99, 71, 0.4);
+    border:0;
+}
